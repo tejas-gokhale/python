@@ -57,7 +57,7 @@ with **constructors**, methods get called automatically
 
 ## Parent and Child Inheritance
 * child inherits parent characteristics
-```
+```python
 class parentClass:
 	var1 = "bacon"
 	var2 = "sausage"
@@ -65,7 +65,7 @@ class childClass(parentClass)
 	pass
 ```
 * child can have multiple parents
-```
+```python
 class mom:
     var1 = "hey I'm mom!"
 class dad:
@@ -79,5 +79,38 @@ childObject = child()
 ## Modules
 can import modules if they are stored in the python dir
 example C:\Python27\
+
+## Working with files
+	
+file object allows us to perform actions on a file
+mode: 'w' or 'r' i.e write or read
+```python
+fob = open(<path>, <mode>)
+```
+```python
+fob.write('hey now brown cow')
+fob.close()
+fob.read(bytes_to_be_read) 	# part of the file
+fob.read()			# read entire file
+fob.readline()			# reads upto the first break
+fob.readlines()			# reads line by line
+```
+
+save each line as a string in a variable
+```python
+listme = fob.readlines()
+fob.close()
+```
+*now we can edit this list* However this does not update the file obviously
+**How do I edit the file?**
+```python
+fob.writelines(listme) # easy!
+```
+
+# GUI with Python
+Install wxPython from [wxpython.org](http://www.wxpython.org/download.php)
+
+
+
 
 
