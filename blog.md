@@ -1,3 +1,4 @@
+___
 *17:12 25-Nov-15*
 ___
 # Python Features
@@ -19,7 +20,7 @@ Code that identifies as *pythonic* meets the following criteria:
 ---includes extensive help
 2. IDLE
 
-
+___
 *22:35 28-Nov-15*
 ___
 ## Lists
