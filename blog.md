@@ -129,6 +129,7 @@ from blahmodule import
 import math
 dir(math)	#lists the names (functions and constants) that have been defined inside math module
 help(module_name.function_name) #interactive help for a module's functions
+```
 
 ___
 *23:10 30-Nov-15*
