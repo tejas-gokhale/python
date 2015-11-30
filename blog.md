@@ -135,8 +135,10 @@ ___
 *23:10 30-Nov-15*
 ___
 # Basic Elements and Syntax
-python does not have 'variables', instead it has '**names**'
 1. ### NAME:
+
+   python does not have 'variables', instead it has '**names**'
+
    > In Python, a ***refers*** to an object. 
    > It is actually a label for a memory location that stores things.
    > These *things* are called ***objects***.
