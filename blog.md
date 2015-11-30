@@ -110,6 +110,111 @@ fob.writelines(listme) # easy!
 
 # GUI with Python
 Install wxPython from [wxpython.org](http://www.wxpython.org/download.php)
+check this [script](https://github.com/tejasG53/python/blob/master/wxBasics.py) for a basic tutorial on using wxPython
+
+___
+*00:10 30-Nov-15*
+___
+## Importing modules
+1. You can import a module 
+```python
+import blahmodule
+```
+2. or can import part of a module
+```python
+from blahmodule import
+```
+3. **Listing the contents of an imported module**
+```python
+import math
+dir(math)	#lists the names (functions and constants) that have been defined inside math module
+help(module_name.function_name) #interactive help for a module's functions
+
+___
+*23:10 30-Nov-15*
+___
+# Basic Elements and Syntax
+python does not have 'variables', instead it has '**names**'
+1. ### NAME:
+> In Python, a ***refers*** to an object. It is actually a label for a memory location that stores things.
+> These *things* are called ***objects***
+> Thus `x = 5` is read as *binding a name(x) to an object(5)*
+> Names can start with _ or alphabet
+
+Convention: use *lowercase* for names that stand for values
+
+2. ### STATEMENTS AND EXPRESSIONS
+
+   1. **Literal**: Chunk of text that specifies values.
+   2. **Statement**: Command to do sth. (Good practice to always assign a name to a literal using a statement.)
+   3. **Expression**: One or more operations that produce a result.
+
+```python
+"monty python"		#literal
+x = "monty python"	#statement
+print x			#expression
+```
+
+3. ### SEQUENTIAL DATA
+Types:
+
+   * Lists: 		arrays
+   * Tuples: 		immutable lists
+   * Strings: 		immutable, store text or binary data
+   * Dictionary:	items and their values `family = {"dad": "57", "mom": "52"}`
+   * sets: 		each item in a set must be unique
+   * files: 		to work with files on your computer
+
+4. ### METHODS
+Data types have methods.
+Each data type has built-in actions associated with it which let you do stuff to your data
+These actions are called methods
+
+   1. Calling a method
+   ```python
+   bleh = "Blah"
+   bleh.lower()
+   ```
+
+5. ### DOCSTRING
+Use docstrings to help others understand your code. They work with python's help utility so that people can figure out what your code does, without looking at the actual file.
+A docstring is always the first line in a function.
+```python
+def function_name(parameters):
+	"""
+	this text is help for function_name
+	"""
+```
+
+6. ### CLASSES
+A class is both a factory and a blueprint: it makes copies of itself, but the copies do the actual work.
+```python
+class SayMyName:
+	def __init__(self, myname):
+		self.myname = myname
+	def say(self):
+		print "Hello, my name is ", self.myname
+```
+You can use a calss to create objects called ***instances*** that can do specific things
+```python
+name1 = SayMyName("chappy")
+```
+An instance has access to the class's *methods*
+```
+name1.say()	#output: Hello, my name is  chappy
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

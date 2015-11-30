@@ -3,8 +3,7 @@
 class parentClass:
     var1 = "I'm Iron Man"
     var2 = "Let's put a smile on that face"
-    
-    
+
 class childClass(parentClass):
     pass
 
